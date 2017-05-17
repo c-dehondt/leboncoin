@@ -2,6 +2,12 @@ body{
   font-family: "OpenSans",sans-serif;
 }
 
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 li, a{
   text-decoration: none;
   list-style: none;
@@ -38,6 +44,9 @@ li, a{
   background-color: #f56b2a;
 }
 
+.pour-pc a{
+  color: white;
+}
 h1{
   font-size:1rem;
   text-align: center;
