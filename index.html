@@ -12,206 +12,281 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+
+        <script src="https://use.fontawesome.com/40917ba2bf.js"></script>
     </head>
 
     <body>
 <!-- *****************************************************header********************************************       -->
     <header>
 
-      <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="menu">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="row navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item"><img class="img col-12" src="img/pc/logo.svg" alt="logo du site"></li>
-              <li class="nav-item active"><a class="nav-link" href="#">Déposer une annonce</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Offres</a></li>
-              <li class="nav-item"><a class="nav-link" href="#"></a>Demandes</a></li>
-              <li class="nav-item"><a class="nav-link" href="#"></a>Mes annonces</a></li>
-              <li class="nav-item"><a class="nav-link" href="#"></a>Boutiques</a></li>
-            </ul>
+<!-- *********************************************menu tel + tab*****************************************************
+*************************************************************************************************************** -->
+      <nav class="hidden-lg-up" id="menu">
+      <button type="button" class="btn btn" id="button-menu" data-toggle="modal" data-target="#exampleModalLong">
+  Menu</button>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" id="fenetre" role="document">
+            <div class="modal-content" id="taille">
+              <div class="modal-header">
+                <ul class="row nav-color list-group" id="nav-ul">
+                  <li class="img list-group-item"><img class="col-7 d-flex align-items-center justify-content-center" src="img/pc/logo.svg" alt="logo du site"></li>
+                  <li class="list-group-item btn btn-secondary"><a href="#">Déposer une annonce</a></li>
+                  <li class="list-group-item btn btn-secondary"><a href="#">Offres</a></li>
+                  <li class="list-group-item btn btn-secondary"><a href="#"></a>Demandes</a></li>
+                  <li class="list-group-item btn btn-secondary"><a href="#"></a>Mes annonces</a></li>
+                  <li class="list-group-item btn btn-secondary"><a href="#"></a>Boutiques</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </nav>
+        <!-- *********************************************fin menu tel + tab*****************************************************
+        *************************************************************************************************************** -->
+
+
+        <!-- *********************************************menu pc*****************************************************
+        *************************************************************************************************************** -->
+      <nav class="pour-pc hidden-lg-down row">
+        <figure class="col-2">
+          <img class="col-12" src="img/pc/logo.svg" alt="">
+        </figure>
+          <ul class="nav col-lg-7">
+           <li class="nav-item"><a class="nav-link" href="#">Déposer une annonce</a></li>
+           <li class="nav-item"><a class="nav-link" href="#">Offres</a></li>
+           <li class="nav-item"><a class="nav-link" href="#">Demandes</a></li>
+           <li class="nav-item"><a class="nav-link" href="#">Mes annonces</a></li>
+           <li class="nav-item"><a class="nav-link" href="#">Boutiques</a></li>
+          </ul>
+
+          <button class="connecter" type="button" name="button"><i class="fa fa-user-o" aria-hidden="true"></i>se connecter</button>
+        </nav>
+    </div>
     </header>
 
-    <main>
-      <div class="">
-        <h1>Trouvez la bonne affaire parmi <span class="color">27 271 737 petites annonces</span> sur leboncoin.</h1>
+    <main class="container-fluid">
+      <div class="container">
+
+
+      <div class="row">
+        <div class="info row col-lg-4 ">
+        <h1 class="col-12">Trouvez la bonne affaire parmi <span class="color">27 271 737 petites annonces</span> sur leboncoin.</h1>
+        <a class="col-12 btn-lg btn-block" href="#"><button type="button" class="btn btn-primary">Déposer une annonce</button></a>
+        <a class="col-12 btn-lg btn-block" href="#"><button type="button" class="btn btn" id="recherche">Rechercher autour de moi</button></a>
       </div>
+
+      <div class="col-lg-5">
+      <figure>
+        <img class="img-fluid" src="img/pc/leboncoin.jpg" alt="">
+      </figure>
+    </div>
+
+    <aside class="hidden-lg-down col-3">
+      <div class="btn-group dropup">
+      <ul class="d-flex align-items-end flex-column">
+        <li class="titre"><a href="#">Alsace</a></li>
+        <li><a href="#">Aquitaine</a></li>
+        <li><a href="#">Auvergne</a></li>
+        <li><a href="#">Basse-Normandie</a></li>
+        <li><a href="#">Bourgogne</a></li>
+        <li><a href="#">Bretagne</a></li>
+        <li><a href="#">Centre</a></li>
+        <li><a href="#">Champagne-Ardenne</a></li>
+        <li><a href="#">Corse</a></li>
+        <li><a href="#">Franche-Comté</a></li>
+        <li><a href="#">Haute-Normandie</a></li>
+        <li><a href="#">Ile-de-France</a></li>
+        <li><a href="#">Languedoc-Roussillon</a></li>
+        <li><a href="#">Limousin</a></li>
+        <li><a href="#">Lorraine</a></li>
+        <li><a href="#">Midi-Pyrénées</a></li>
+        <li><a href="#">Nord-Pas-de-Calais</a></li>
+        <li><a href="#">Pays de la Loire</a></li>
+        <li><a href="#">Picardie</a></li>
+        <li><a href="#">Poitou-Charentes</a></li>
+        <li><a href="#">Provence</a></li>
+        <li><a href="#">Alpes-Côte d'Azur</a></li>
+        <li><a href="#">Rhône-Alpes</a></li>
+        <li><a href="#">Guadeloupe</a></li>
+        <li><a href="#">Martinique</a></li>
+        <li><a href="#">Guyane</a></li>
+      </ul>
+    </div>
+    </aside>
+    <p class="col-12"> Sur le site <a href="#">leboncoin.fr</a>, passez des <a href="#">annonces gratuites</a> et sans commission. Vous pouvez <a href="#">consulter des petites annonces</a> de <a href="#">particuliers</a> et de <a href="#">professionnels</a> partout en France, que vous cherchiez des <a href="#">annonces immobilières</a>, des <a href="#">voitures d'occasion</a>, des <a href="#">offres d'emploi</a>, des <a href="#">meubles</a>, du <a href="#">matériel électronique</a> ou tout autre type de <a href="#">produits d'occasion</a>. </p>
+  </div>
+
+
     </main>
 
 
 <!-- **********************************************************************footer*********************************************** -->
-    <footer>
-      <ul>
-        <li class="titre">Alsace</li>
-        <li>Aquitaine</li>
-        <li>Auvergne</li>
-        <li>Basse-Normandie</li>
-        <li>Bourgogne</li>
-        <li>Bretagne</li>
-        <li>Centre</li>
-        <li>Champagne-Ardenne</li>
-        <li>Corse</li>
-        <li>Franche-Comté</li>
-        <li>Haute-Normandie</li>
-        <li>Ile-de-France</li>
-        <li>Languedoc-Roussillon</li>
-        <li>Limousin</li>
-        <li>Lorraine</li>
-        <li>Midi-Pyrénées</li>
-        <li>Nord-Pas-de-Calais</li>
-        <li>Pays de la Loire</li>
-        <li>Picardie</li>
-        <li>Poitou-Charentes</li>
-        <li>Provence-Alpes-Côte d'Azur</li>
-        <li>Rhône-Alpes</li>
-        <li>Guadeloupe</li>
-        <li>Martinique</li>
-        <li>Guyane</li>
-      </ul>
+    <footer class="container-fluid">
 
-      <ul>
-       <li class="titre">EMPLOI</li>
-       <li>Offres d'emploi</li>
-      </ul>
+      <div class="footer-haut container row d-flex justify-content-around"><!-- debut footer haut -->
+         <div class="col-lg-3">
+          <ul>
+           <li class="titre"><a href="#">EMPLOI</a></li>
+           <li><a href="#">Offres d'emploi</a></li>
+          </ul>
 
-      <ul>
-        <LI class="titre">VEHICULES</LI>
-        <li>Voitures</li>
-        <li>Motos</li>
-        <li>Caravaning</li>
-        <li>Utilitaires</li>
-        <li>Equipement Auto</li>
-        <li>Equipement Moto</li>
-        <li>Equipement</li>
-        <li>Caravaning</li>
-        <li>Nautisme</li>
-        <li>Equipement</li>
-        <li>Nautisme</li>
-      </ul>
+         <ul>
+           <li class="titre"><a href="#">VEHICULES</a></li>
+           <li><a href="#">Voitures</a></li>
+           <li><a href="#">Motos</a></li>
+           <li><a href="#">Caravaning</a></li>
+           <li><a href="#">Utilitaires</a></li>
+           <li><a href="#">Equipement Auto</a></li>
+           <li><a href="#">Equipement Moto</a></li>
+           <li><a href="#">Equipement</a></li>
+           <li><a href="#">Caravaning</a></li>
+           <li><a href="#">Nautisme</a></li>
+           <li><a href="#">Equipement</a></li>
+           <li><a href="#">Nautisme</a></li>
+         </ul>
 
-      <ul>
-        <LI class="titre">IMMOBILIER</LI>
-        <li>Ventes immobilières</li>
-        <li>Locations</li>
-        <li>Colocations</li>
-        <li>Bureaux &Commerces</li>
-      </ul>
-
-      <ul>
-        <LI class="titre">VACANCES</LI>
-        <li>Locations & Gîtes</li>
-        <li>Chambres d'hôtes</li>
-        <li>Campings</li>
-        <li>Hôtels</li>
-        <li>Hébergements</li>
-        <li>insolites</li>
-      </ul>
-
-      <ul>
-        <li class="titre">MAISON</li>
-        <li>Ameublement</li>
-        <li>Electroménager</li>
-        <li>Arts de la table</li>
-        <li>Décoration</li>
-        <li>Linge de maison</li>
-        <li>Bricolage</li>
-        <li>Jardinage</li>
-        <li>Vêtements</li>
-        <li>Chaussures</li>
-        <li>Accessoires & Bagagerie</li>
-        <li>Montres & Bijoux</li>
-        <li>Equipement bébé</li>
-        <li>Vêtements bébé</li>
-      </ul>
-
-      <ul>
-        <li class="titre">MULTIMEDIA</li>
-        <li>Informatique</li>
-        <li>Consoles & Jeux</li>
-        <li>vidéo</li>
-        <li>Image & Son</li>
-        <li>Téléphonie</li>
-      </ul>
-
-      <ul>
-        <li class="titre">LOISIRS</li>
-        <li>DVD / Films</li>
-        <li>CD / Musique</li>
-        <li>Livres</li>
-        <li>Animaux</li>
-        <li>Vélos</li>
-        <li>Sports & Hobbies</li>
-        <li>Instruments de musique</li>
-        <li>Collection</li>
-        <li>Jeux & Jouets</li>
-        <li>Vins & Gastronomie</li>
-      </ul>
-
-      <ul>
-        <li class="titre">MATERIEL PROFESSIONNEL</li>
-        <li>Matériel Agricole</li>
-        <li>Transport - Manutention</li>
-        <li>BTP - Chantier Gros-oeuvre</li>
-        <li>Outillage - Matériaux 2nd-oeuvre</li>
-        <li>Equipement industriels</li>
-        <li>Restauration - Hôtellerie</li>
-        <li>Fournitures de Bureau</li>
-        <li>Commerces & Marchés</li>
-        <li>Matériel Médical</li>
-      </ul>
-
-      <ul>
-        <li class="titre">SERVICES</li>
-        <li>Prestations de services</li>
-        <li>Billetterie</li>
-        <li>Evénements</li>
-        <li>Cours particuliers</li>
-        <li>Covoiturage</li>
-      </ul>
-
-      <ul>
-        <li class="titre">AUTRES</li>
-        <li>Autres</li>
-      </ul>
+         <ul>
+           <li class="titre"><a href="#">IMMOBILIER</a></li>
+           <li><a href="#">Ventes immobilières</a></li>
+           <li><a href="#">Locations</a></li>
+           <li><a href="#">Colocations</a></li>
+           <li><a href="">Bureaux &Commerces</a></li>
+        </ul>
+      </div>
 
 
-      <ul>
-        <li>À PROPOS DU BONCOIN</li>
-        <li>Qui sommes-nous ?</li>
-        <li>Nous rejoindre</li>
-        <li>Impact environnemental</li>
-        <li>NOS APPLICATIONS</li>
-      </ul>
+      <div class="col-3">
+       <ul>
+         <LI class="titre"><a href="#">VACANCES</LI>
+         <li><a href="#">Locations & Gîtes</li>
+         <li><a href="#">Chambres d'hôtes</li>
+         <li><a href="#">Campings</li>
+         <li><a href="#">Hôtels</li>
+         <li><a href="#">Hébergements</li>
+         <li><a href="#">insolites</li>
+       </ul>
 
-        <li>Télécharger l'application Iphone/Ipad  Télécharger l'application Android</li>
+       <ul>
+         <li class="titre"><a href="#">MAISON</a></li>
+         <li><a href="#">Ameublement</a></li>
+         <li><a href="#">Electroménager</a></li>
+         <li><a href="#">Arts de la table</a></li>
+         <li><a href="#">Décoration</a></li>
+         <li><a href="#">Linge de maison</a></li>
+         <li><a href="#">Bricolage</a></li>
+         <li><a href="#">Jardinage</a></li>
+         <li><a href="#">Vêtements</a></li>
+         <li><a href="#">Chaussures</a></li>
+         <li><a href="#">Accessoires & Bagagerie</a></li>
+         <li><a href="#">Montres & Bijoux</a></li>
+         <li><a href="#">Equipement bébé</a></li>
+         <li><a href="#">Vêtements bébé</a></li>
+       </ul>
+      </div>
 
-      <ul>
-        <li>INFORMATIONS LÉGALES</li>
-        <li>Conditions générales d'utilisation</li>
-        <li>Règles de diffusion</li>
-        <li>Conditions Générales de Vente</li>
-        <li>Vie privée et cookies</li>
-        <li>Vos droits et obligations</li>
-      </ul>
+      <div class="col-3">
+       <ul>
+         <li class="titre"><a href="#">MULTIMEDIA</a></li>
+         <li><a href="#">Informatique</a></li>
+         <li><a href="#">Consoles & Jeux</a></li>
+         <li><a href="#">vidéo</a></li>
+         <li><a href="#">Image & Son</a></li>
+         <li><a href="#">Téléphonie</a></li>
+       </ul>
 
-      <ul>
-        <li>PROFESSIONNELS</li>
-        <li>Publicité</li>
-        <li>Professionnels de l'immobilier</li>
-        <li>Vos recrutements</li>
-        <li>Toutes nos solutions pros</li>
-        <li>DES QUESTIONS ?</li>
-      </ul>
+       <ul>
+         <li class="titre"><a href="#">LOISIRS</a></li>
+         <li><a href="#">DVD / Films</a></li>
+         <li><a href="#">CD / Musique</a></li>
+         <li><a href="#">Livres</a></li>
+         <li><a href="#">Animaux</a></li>
+         <li><a href="#">Vélos</a></li>
+         <li><a href="#">Sports & Hobbies</a></li>
+         <li><a href="#">Instruments de musique</a></li>
+         <li><a href="#">Collection</a></li>
+         <li><a href="#">Jeux & Jouets</a></li>
+         <li><a href="#">Vins & Gastronomie</a></li>
+       </ul>
+      </div>
 
-      <ul>
-        </li>
-        <li>Aide</li>
-        <li>Nous contacter</li>
-        <li>VOUS ÊTES À L'ÉTRANGER ?</li>
-      </ul>
+      <div class="col-3">
+       <ul>
+         <li class="titre"><a href="#">MATERIEL PROFESSIONNEL</a></li>
+         <li><a href="#">Matériel Agricole</a></li>
+         <li><a href="#">Transport - Manutention</a></li>
+         <li><a href="#">BTP - Chantier Gros-oeuvre<</a>/li>
+         <li><a href="#">Outillage - Matériaux 2nd-oeuvre</a></li>
+         <li><a href="#">Equipement industriels</a></li>
+         <li><a href="#">Restauration - Hôtellerie</a></li>
+         <li><a href="#">Fournitures de Bureau</a></li>
+         <li><a href="#">Commerces & Marchés</a></li>
+         <li><a href="#">Matériel Médical</a></li>
+       </ul>
+
+       <ul>
+         <li class="titre"><a href="#">SERVICES</a></li>
+         <li><a href="#">Prestations de services</a></li>
+         <li><a href="#">Billetterie</a></li>
+         <li><a href="#">Evénements</a></li>
+         <li><a href="#">Cours particuliers</a></li>
+         <li><a href="#">Covoiturage</a></li>
+       </ul>
+
+       <ul>
+         <li class="titre"><a href="#">AUTRES</a></li>
+         <li><a href="#">Autres</a></li>
+       </ul>
+     </div>
+   </div><!-- fin footer haut -->
+
+
+    <div class="footer-bas row"><!-- debut footer bas -->
+      <div class="col-lg-3">
+        <ul>
+         <li class="titre"><a href="#">À PROPOS DU BONCOIN</a></li>
+         <li><a href="#">Qui sommes-nous ?</li><a href="#">
+         <li><a href="#">Impact environnemental</a></li>
+        </ul>
+
+       <ul>
+         <li class="titre"><a href="#">NOS APPLICATIONS</a></li>
+         <li><a href="#"><img src="img/pc/app.png" alt="apple"></a></li>
+         <li><a href="#"><img src="img/pc/app2.png" alt="samsung"></a></li>
+       </ul>
+     </div>
+
+     <div class="col-lg-3">
+       <ul>
+         <li class="titre"><a href="#">INFORMATIONS LÉGALES</a></li>
+         <li><a href="#">Conditions générales d'utilisation</a></li>
+         <li><a href="#">Règles de diffusion</a></li>
+         <li><a href="#">Conditions Générales de Vente</a></li>
+         <li><a href="#">Vie privée et cookies</a></li>
+         <li><a href="#">Vos droits et obligations</a></li>
+       </ul>
+     </div>
+
+     <div class="col-lg-3">
+       <ul>
+         <li class="titre"><a href="#">PROFESSIONNELS</a></li>
+         <li><a href="#">Publicité</a></li>
+         <li><a href="#">Professionnels de l'immobilier</a></li>
+         <li><a href="#">Vos recrutements</a></li>
+         <li><a href="#">Toutes nos solutions pros</a></li>
+         <li><a href="#">DES QUESTIONS ?</a></li>
+       </ul>
+     </div>
+
+     <div class="col-lg-3">
+       <ul>
+         <li class="titre">Aide</li>
+         <li>Nous contacter</li>
+         <li>VOUS ÊTES À L'ÉTRANGER ?</li>
+       </ul>
+     </div>
+    </div>
     </footer>
 
 
